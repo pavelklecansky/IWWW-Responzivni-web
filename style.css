@@ -54,6 +54,7 @@ footer a:hover {
 .gallery img {
   max-height: 100%;
   min-width: 100%;
+  max-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12),
@@ -102,5 +103,11 @@ textarea {
   h1 {
     font-size: 2.5em;
     margin-top: 10px;
+  }
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    margin: auto;
   }
 }
