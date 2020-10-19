@@ -1,11 +1,12 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
-body{
+body {
   width: 95vw;
   margin: 10px auto;
 }
 h1 {
+  margin-top: 10px;
   text-align: center;
   font-size: 4em;
 }
@@ -21,6 +22,7 @@ nav a {
 }
 nav a:hover {
   color: #000;
+  text-decoration: underline;
 }
 
 footer {
@@ -56,4 +58,49 @@ footer a:hover {
   vertical-align: bottom;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.full-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12),
+    0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: auto;
+}
+
+#contactForm label {
+  margin-bottom: 0.4em;
+  font-weight: 600;
+}
+input,select,textarea{
+  font-size: 1.2em;
+}
+
+input,
+select {
+  padding: 7px 10px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+textarea {
+  min-height: 70px;
+  padding: 7px 10px;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+  }
 }
