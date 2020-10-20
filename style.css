@@ -4,6 +4,7 @@
 body {
   width: 95vw;
   margin: 10px auto;
+  overflow-x: hidden;
 }
 h1 {
   margin-top: 10px;
